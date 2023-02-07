@@ -1,19 +1,59 @@
-.title {
-        padding: 20rem;
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 4rem;
+:root {
+        --branco-principal: #ffffff;
+        --cinza-secundario: #c0c0c0;
+        --botao-azul: #167bf7;
+        --cor-de-fundo: #00030c;
+        --fonte-principal: 'Inter';
 }
 
-.name {
-        margin: auto;
-        margin-left: 4rem;
-
+body {
+        background-color: var(--cor-de-fundo);
+        color: var(--branco-principal);
+        font-family: var(--fonte-principal);
+        font-size: 1rem;
+        font-weight: 400;
 }
 
-.birthday {
+* {
         margin: 0;
-        padding: 1rem;
-        margin-left: 5rem;
+        padding: 0;
+}
 
+.principal {
+        background-image: url(../Images/Background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+
+.container__titulo {
+        font-size: 1.75rem;
+        font-weight: 700;
+}
+
+.container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 33%;
+}
+
+.container__botao {
+        background-color: var(--botao-azul);
+        border-radius: 0.35rem;
+        padding: 1em;
+        color: var(--branco-principal);
+        display: block;
+        text-decoration: none;
+        text-align: center;
+}
+
+.container__botao__2 {
+        background-color: transparent;
+        border: 2px solid var(--branco-principal);
+
+}
+
+.container__aviso {
+        font-size: 0.75rem;
+        color: var(--cinza-secundario);
+        text-align: center;
 }
