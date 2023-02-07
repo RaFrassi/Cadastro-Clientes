@@ -1,3 +1,7 @@
+@media only screen and (max-device-width: 900px) {
+        /* .menu { width:600px; } */
+}
+
 :root {
         --branco-principal: #ffffff;
         --cinza-secundario: #c0c0c0;
@@ -7,6 +11,7 @@
 }
 
 body {
+        margin: 4rem;
         background-color: var(--cor-de-fundo);
         color: var(--branco-principal);
         font-family: var(--fonte-principal);
@@ -14,18 +19,17 @@ body {
         font-weight: 400;
 }
 
-* {
-        margin: 0;
-        padding: 0;
-}
+
 
 .principal {
-        background-image: url(../Images/Background.png);
+        display: block;
+        width: 80%;
+        padding: 5rem;
         background-repeat: no-repeat;
-        background-size: contain;
 }
 
 .container__titulo {
+        text-align: center;
         font-size: 1.75rem;
         font-weight: 700;
 }
@@ -33,13 +37,14 @@ body {
 .container {
         height: 100vh;
         display: grid;
-        grid-template-columns: 33%;
+
 }
 
 .container__botao {
+        margin-top: 2rem;
         background-color: var(--botao-azul);
         border-radius: 0.35rem;
-        padding: 1em;
+        padding: 1rem;
         color: var(--branco-principal);
         display: block;
         text-decoration: none;
@@ -47,13 +52,14 @@ body {
 }
 
 .container__botao__2 {
+
         background-color: transparent;
         border: 2px solid var(--branco-principal);
 
 }
 
 .container__aviso {
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: var(--cinza-secundario);
         text-align: center;
 }
