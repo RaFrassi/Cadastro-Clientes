@@ -19,12 +19,19 @@ body {
         font-weight: 400;
 }
 
-
+.container__img {
+        padding: 1rem;
+        border-radius: 1rem;
+        opacity: 0.5;
+        margin-left: 19rem;
+        width: 50%;
+}
 
 .principal {
-        display: block;
-        width: 80%;
-        padding: 5rem;
+        display: flex;
+        width: 50%;
+        padding: 10rem;
+        margin: 0 10rem;
         background-repeat: no-repeat;
 }
 
@@ -59,6 +66,7 @@ body {
 }
 
 .container__aviso {
+        padding: 2rem;
         font-size: 1rem;
         color: var(--cinza-secundario);
         text-align: center;

@@ -15,81 +15,83 @@
 </head>
 
 <body>
+        <header>
+                <img src="./Images/background.png" class="container__img">
+        </header>
         <h1>Formulario Pessoa Juridica</h1>
 
-        <body>
-                <h1>Formulario Pessoa Fisica</h1><br>
-                <form class="formulario" method="post">
-                        <p> Faça seu cadastro preenchendo formulario abaixo.</p><br>
-                        <form>
-                                <label for="fname">Nome Completo:</label><br>
-                                <input type="text" id="fname" name="fname" size="50"><br>
-                        </form>
 
-                        <form>
-                                <label for="cpf">Digit seu CPF:</label><br>
-                                <input type="cpf" id="cpf" name="cpf" placeholder="000.000.000-00"
-                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" required>
-                        </form>
-                        <br>
-
-                        <form>
-                                <label for="cpf">Digit seu CPF:</label><br>
-                                <input type="cpf" id="cpf" name="cpf" placeholder="000.000.000-00"
-                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" required>
-                        </form>
-                        <br>
-
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" class="input-padrao" required
-                                placeholder="(xx) xxxxx-xxxx"><br><br>
-
-                        <form>
-                                <label for="cep">CEP</label>
-                                <input id="cep" type="text" required />
-                                <label for="logradouro">Logradouro</label>
-                                <input id="logradouro" type="text" size="60" required />
-                                <label for="numero">Número</label>
-                                <input id="numero" type="text" size="10" /><br><br>
-                                <label for="complemento">Complemento</label>
-                                <input id="complemento" type="text" />
-                                <label for="bairro">Bairro</label>
-                                <input id="bairro" type="text" required />
-                                <label for="uf">Estado</label>
-                                <select id="uf">
-                                        <option value="AC">Acre</option>
-                                        <option value="AL">Alagoas</option>
-                                        <option value="AP">Amapá</option>
-                                        <option value="AM">Amazonas</option>
-                                        <option value="BA">Bahia</option>
-                                        <option value="CE">Ceará</option>
-                                        <option value="DF">Distrito Federal</option>
-                                        <option value="ES">Espírito Santo</option>
-                                        <option value="GO">Goiás</option>
-                                        <option value="MA">Maranhão</option>
-                                        <option value="MT">Mato Grosso</option>
-                                        <option value="MS">Mato Grosso do Sul</option>
-                                        <option value="MG">Minas Gerais</option>
-                                        <option value="PA">Pará</option>
-                                        <option value="PB">Paraíba</option>
-                                        <option value="PR">Paraná</option>
-                                        <option value="PE">Pernambuco</option>
-                                        <option value="PI">Piauí</option>
-                                        <option value="RJ">Rio de Janeiro</option>
-                                        <option value="RN">Rio Grande do Norte</option>
-                                        <option value="RS">Rio Grande do Sul</option>
-                                        <option value="RO">Rondônia</option>
-                                        <option value="RR">Roraima</option>
-                                        <option value="SC">Santa Catarina</option>
-                                        <option value="SP">São Paulo</option>
-                                        <option value="SE">Sergipe</option>
-                                        <option value="TO">Tocantins</option>
-                                </select>
-                        </form>
-                        <br>
-                        <input type="submit" name="acao" value="Enviar">
+        <h1>Formulario Pessoa Fisica</h1><br>
+        <form class="formulario" method="post">
+                <p> Faça seu cadastro preenchendo formulario abaixo.</p><br>
+                <form>
+                        <label for="fname">Nome Completo:</label><br>
+                        <input type="text" id="fname" name="fname" size="50"><br>
                 </form>
-        </body>
+
+                <form>
+                        <label for="cpf">Digit seu CPF:</label><br>
+                        <input type="cpf" id="cpf" name="cpf" placeholder="000.000.000-00"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" required>
+                </form>
+                <br>
+
+                <form>
+                        <label for="cpf">Digit seu CPF:</label><br>
+                        <input type="cpf" id="cpf" name="cpf" placeholder="000.000.000-00"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" required>
+                </form>
+                <br>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx"><br><br>
+
+                <form>
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" required />
+                        <label for="logradouro">Logradouro</label>
+                        <input id="logradouro" type="text" size="60" required />
+                        <label for="numero">Número</label>
+                        <input id="numero" type="text" size="10" /><br><br>
+                        <label for="complemento">Complemento</label>
+                        <input id="complemento" type="text" />
+                        <label for="bairro">Bairro</label>
+                        <input id="bairro" type="text" required />
+                        <label for="uf">Estado</label>
+                        <select id="uf">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                        </select>
+                </form>
+                <br>
+                <input type="submit" name="acao" value="Enviar">
+        </form>
+</body>
 </body>
 
 </html>

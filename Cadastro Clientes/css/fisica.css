@@ -18,3 +18,11 @@ body {
         font-size: 1rem;
         font-weight: 400;
 }
+
+.container__img {
+        padding: 1rem;
+        border-radius: 1rem;
+        opacity: 0.5;
+        margin-left: 19rem;
+        width: 50%;
+}
