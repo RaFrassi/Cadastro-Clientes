@@ -20,9 +20,8 @@ body {
 }
 
 .container__img {
-        padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 10px;
         opacity: 0.5;
-        margin-left: 19rem;
-        width: 50%;
+        margin-left: 21rem;
+        width: 100vh;
 }

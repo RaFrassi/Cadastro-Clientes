@@ -20,16 +20,15 @@ body {
 }
 
 .container__img {
-        padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 10px;
         opacity: 0.5;
-        margin-left: 19rem;
-        width: 50%;
+        margin-left: 21rem;
+        width: 100vh;
 }
 
 .principal {
         display: flex;
-        width: 50%;
+        width: 100vh;
         padding: 10rem;
         margin: 0 10rem;
         background-repeat: no-repeat;
@@ -39,12 +38,6 @@ body {
         text-align: center;
         font-size: 1.75rem;
         font-weight: 700;
-}
-
-.container {
-        height: 100vh;
-        display: grid;
-
 }
 
 .container__botao {

@@ -19,106 +19,110 @@
 <body>
         <header>
                 <img src="./Images/background.png" class="container__img">
+                <h1>Formulario Pessoa Fisica</h1><br>
         </header>
-        <h1>Formulario Pessoa Fisica</h1><br>
-        <form class="formulario" method="post">
-                <p> Faça seu cadastro preenchendo formulario abaixo.</p><br>
-                <form>
-                        <label for="fname">Nome Completo:</label><br>
-                        <input type="text" id="fname" name="fname" size="50"><br>
-                </form>
+        <main>
+                <form class="formulario" method="post">
+                        <p> Faça seu cadastro preenchendo formulario abaixo.</p><br>
+                        <form>
+                                <label for="fname">Nome Completo:</label><br>
+                                <input type="text" id="fname" name="fname" size="50"><br>
+                        </form>
 
-                <div class="form_grupo"><br>
-                        <span class="legenda">Sexo:</span>
+                        <div class="form_grupo"><br>
+                                <span class="legenda">Sexo:</span>
 
-                        <div class="radio-btn">
-                                <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino"
-                                        required="required">
-                                <label for="masculino" class="radio_label form_label"> <span
-                                                class="radio_new_btn"></span> Masculino</label>
+                                <div class="radio-btn">
+                                        <input type="radio" class="form_new_input" id="masculino" name="sexo"
+                                                value="Masculino" required="required">
+                                        <label for="masculino" class="radio_label form_label"> <span
+                                                        class="radio_new_btn"></span> Masculino</label>
+                                </div>
+                                <div class="radio-btn">
+                                        <input type="radio" class="form_new_input" id="feminino" name="sexo"
+                                                value="Feminino" required="required">
+                                        <label for="feminino" class="radio_label form_label"> <span
+                                                        class="radio_new_btn"></span> Feminino</label>
+                                </div>
+                        </div><br>
+                        <div class="form_grupo">
+                                <label for="datanascimento" class="form_label">Data de Nascimento</label><br>
+                                <input type="date" name="datanascimento" class="form_input" id="datanascimento"
+                                        placeholder="Data de Nascimento" required>
                         </div>
-                        <div class="radio-btn">
-                                <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino"
-                                        required="required">
-                                <label for="feminino" class="radio_label form_label"> <span
-                                                class="radio_new_btn"></span> Feminino</label>
-                        </div>
-                </div><br>
-                <div class="form_grupo">
-                        <label for="datanascimento" class="form_label">Data de Nascimento</label><br>
-                        <input type="date" name="datanascimento" class="form_input" id="datanascimento"
-                                placeholder="Data de Nascimento" required>
-                </div>
-                <br>
-                <form>
-                        <label for="cpf">Digit seu CPF:</label><br>
-                        <input type="cpf" id="cpf" name="cpf" placeholder="000.000.000-00"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" required>
+                        <br>
+                        <form>
+                                <label for="cpf">Digit seu CPF:</label><br>
+                                <input type="cpf" id="cpf" name="cpf" placeholder="000.000.000-00"
+                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" required>
+                        </form>
+                        <br>
+                        <form class="form_grupo">
+
+                                <label for="estadocivil" class="text">Estado civil</label>
+                                <select name="estadocivil" class="dropdown" required>
+
+                                        <option selected disabled class="form_select_option" value="">Selecione</option>
+                                        <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
+                                        <option value="Casado" class="form_select_option">Casado(a) </option>
+                                        <option value="Divorciado" class="form_select_option">Divorciado(a)</option>
+                                        <option value="Viúvo" class="form_select_option">Viúvo(a)</option>
+
+                                </select>
+                        </form>
+                        <br>
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" class="input-padrao" required
+                                placeholder="(xx) xxxxx-xxxx"><br><br>
+
+                        <form>
+                                <label for="cep">CEP</label>
+                                <input id="cep" type="text" required />
+                                <label for="logradouro">Logradouro</label>
+                                <input id="logradouro" type="text" size="60" required />
+                                <label for="numero">Número</label>
+                                <input id="numero" type="text" size="10" /><br><br>
+                                <label for="complemento">Complemento</label>
+                                <input id="complemento" type="text" />
+                                <label for="bairro">Bairro</label>
+                                <input id="bairro" type="text" required />
+                                <label for="uf">Estado</label>
+                                <select id="uf">
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                </select>
+                        </form>
+                        <br>
+                        <input type="submit" name="acao" value="Enviar">
                 </form>
-                <br>
-                <form class="form_grupo">
+        </main>
 
-                        <label for="estadocivil" class="text">Estado civil</label>
-                        <select name="estadocivil" class="dropdown" required>
-
-                                <option selected disabled class="form_select_option" value="">Selecione</option>
-                                <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
-                                <option value="Casado" class="form_select_option">Casado(a) </option>
-                                <option value="Divorciado" class="form_select_option">Divorciado(a)</option>
-                                <option value="Viúvo" class="form_select_option">Viúvo(a)</option>
-
-                        </select>
-                </form>
-                <br>
-
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx"><br><br>
-
-                <form>
-                        <label for="cep">CEP</label>
-                        <input id="cep" type="text" required />
-                        <label for="logradouro">Logradouro</label>
-                        <input id="logradouro" type="text" size="60" required />
-                        <label for="numero">Número</label>
-                        <input id="numero" type="text" size="10" /><br><br>
-                        <label for="complemento">Complemento</label>
-                        <input id="complemento" type="text" />
-                        <label for="bairro">Bairro</label>
-                        <input id="bairro" type="text" required />
-                        <label for="uf">Estado</label>
-                        <select id="uf">
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                        </select>
-                </form>
-                <br>
-                <input type="submit" name="acao" value="Enviar">
-        </form>
 </body>
 
 </html>
